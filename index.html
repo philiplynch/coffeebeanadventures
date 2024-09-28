@@ -1,12 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coffee Bean Adventures</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            z-index: 1;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            z-index: 1;
+        }
+
+        header .cta-button {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            background-color: #f39c12;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            z-index: 1;
+        }
+
+        header .cta-button:hover {
+            background-color: #d35400;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 4rem 2rem;
+            background-color: #fff;
+            border-top: 5px solid #f39c12;
+        }
+
+        .feature-item {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature-item img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        .feature-item h3 {
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .feature-item p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Welcome to Coffee Bean Adventures</h1>
-    <p>Explore the world of coffee beans with us!</p>
+    <header>
+        <div>
+            <h1>Welcome to Coffee Bean Adventures! ☕️</h1>
+            <p>Embark on a journey of rich flavors and unique coffee experiences from around the globe.</p>
+            <button class="cta-button">Explore Our Beans 🌍</button>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="feature-item">
+            <img src="https://images.unsplash.com/photo-1525935944576-7a5b84af92f2" alt="Exotic Coffee Beans">
+            <h3>Exotic Selections</h3>
+            <p>Discover rare and premium coffee beans from the world's finest coffee regions.</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://images.unsplash.com/photo-1443131307017-7e3268ccd58a" alt="Coffee Subscription">
+            <h3>Monthly Subscriptions</h3>
+            <p>Receive a curated selection of fresh coffee beans delivered to your door every month.</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://images.unsplash.com/photo-1514373941175-0a15c190bcee" alt="Coffee Tasting">
+            <h3>Unique Blends</h3>
+            <p>Explore our exclusive blends that offer a symphony of flavors in every cup.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 Coffee Bean Adventures. All rights reserved. | <a href="mailto:info@coffeebeanadventures.com">Contact Us</a></p>
+    </footer>
 </body>
+
 </html>
